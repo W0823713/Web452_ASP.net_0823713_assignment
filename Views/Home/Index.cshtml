@@ -1,0 +1,88 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Exo 2', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            color: white;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .image-item {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 20px;
+        }
+
+            .image-item img {
+                width: 100%;
+                height: auto;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Arya's Socks</h1>
+        <a class="nav-link text-light" asp-area="" asp-controller="Socks" asp-action="Index">Socks Details</a>
+    </div>
+
+    <div class="container">
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="~/img/Sock1.jpg" alt="Sock 1" />
+            </div>
+            <div class="image-item">
+                <img src="~/img/Sock6.jpg" alt="Sock 6" />
+            </div>
+            <div class="image-item">
+                <img src="~/img/Sock3.jpg" alt="Sock 3" />
+            </div>
+            <div class="image-item">
+                <img src="~/img/Sock4.jpg" alt="Sock 4" />
+            </div>
+            <div class="image-item">
+                <img src="~/img/Sock5.jpg" alt="Sock 5" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

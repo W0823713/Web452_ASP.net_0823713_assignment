@@ -1,0 +1,153 @@
+﻿@model AryaSock.Models.Sock
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<style>
+    body {
+        font-family: 'Exo 2', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        height: 120%;
+        margin-bottom: 80px;
+        padding-bottom: 80px;
+    }
+
+    .header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 36px;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Additional styles for your table */
+    table {
+        width: 150%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 180px;
+    }
+
+    th, td {
+        padding: 10px;
+        padding-bottom: 120px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 180px;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+        margin-bottom: 180px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+        margin-bottom: 180px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* End of additional styles for the table */
+
+    .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .image-item {
+        flex-basis: calc(33.33% - 20px);
+        margin-bottom: 20px;
+    }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+        }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<h1>Edit</h1>
+
+<h4>Sock</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Material" class="control-label"></label>
+                <input asp-for="Material" class="form-control" />
+                <span asp-validation-for="Material" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label"></label>
+                <input asp-for="Size" class="form-control" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
