@@ -12,7 +12,7 @@ This project is Assignment 1, which involves creating a robust MVC web applicati
 - Start Date: 5th October 2023
 - 09:00 AM: The project was initiated by creating the README, serving as the project's initial and foundational document.
   
-       *(took a bit of a break)*
+ **(took a bit of a break)*
   
  **Get Started**
 - Start Date: 5th October 2023
