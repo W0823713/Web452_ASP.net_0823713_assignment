@@ -12,10 +12,9 @@ This project is Assignment 1, which involves creating a robust MVC web applicati
 - Start Date: 5th October 2023
 - 09:00 AM: The project was initiated by creating the README, serving as the project's initial and foundational document.
   
- **(took a bit of a break)*
+      *(took a bit of a break)*
   
  **Get Started**
-- Start Date: 5th October 2023
 - 10:00 AM: Initiated the project by setting up the development environment, including Visual Studio 2019 which was already provided by our proffessor.
 
 - 10:30 AM: Created a new project and initialized the project's structure, defining the basic project layout. But I did all this in my macbook which was my biggest mistake as it doesn't support ASP.NET Core 3.1.
@@ -58,12 +57,13 @@ This project is Assignment 1, which involves creating a robust MVC web applicati
 **Deployment to Azure and Issue Resolution**
 - **Deployment to Azure:** Successfully deployed the application to Azure, making it accessible online. All pages are visible to users.
 - **Issue with Table Display:** An error occurred while processing requests in the deployed Azure environment. The error message received is as follows:
-An error occurred while processing your request.
-Request ID: |128127ee-4e00f2e6c198b066.
-Development Mode
-Swapping to Development environment will display more detailed information about the error
-that occurred.
-The Development environment shouldn't be enabled for deployed applications. It can result
+  
+       An error occurred while processing your request.
+       Request ID: |128127ee-4e00f2e6c198b066.
+       Development Mode
+       Swapping to Development environment will display more detailed information about the error
+       that occurred.
+       The Development environment shouldn't be enabled for deployed applications. It can result
 in displaying sensitive information from
 exceptions to end users. For local debugging, enable the Development environment by
 setting the ASPNETCORE_ENVIRONMENT environment
