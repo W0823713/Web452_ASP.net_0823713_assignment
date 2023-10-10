@@ -30,14 +30,22 @@ This project is Assignment 1, which involves creating a robust MVC web applicati
 - 12:30 PM: Developed initial views for the application to render HTML for user interactions. These views lay the foundation for displaying sock information to users. This was the moment I realized that I can update the table the way i want and its functional. 
 
 **Add a Model**
-- 14:00 PM: Defined the sock model class. This model specifies the structure and attributes of a sock, including its name, price, ratings, id, title, release date, etc. It serves as the data structure for sock products. 
+- 14:00 PM: Defined the sock model class. This model specifies the structure and attributes of a sock, including its name, price, ratings, id, title, release date, etc. It serves as the data structure for sock products. Then i ran the following command
 
+      Install-Package Microsoft.EntityFrameworkCore.SqlServer
+By running this command I installed the sql server. 
+
+       *(Took a bit of a break)*
+       
 **Work with a Database**
-- 15:30 PM: Configured and set up a database for the project, allowing for the storage and management of sock products. The sock model data was mapped to this database to ensure data persistence.
+- 15:30 PM: Configured and set up a database for the project, allowing for the storage and management of sock products. The sock model data was mapped to this database to ensure data persistence.  In this, I had to Create a database context class then Register the database context and lastly Examine the database connection string.
+
+      *(Done for the day)*
 
 **Controller Actions and Views**
 - 6th October 2023
-  - 09:00 AM: Implemented controller actions for listing socks, viewing individual sock details, and potentially adding, updating, or deleting socks. These actions enable various user interactions.
+  - 09:00 AM: Scaffold Sock pageswas the first real problem i faced as it was just not happening it took a lot of trial and error.
+  -  Implemented controller actions for listing socks, viewing individual sock details, and potentially adding, updating, or deleting socks. These actions enable various user interactions. As updatind allowed to update the information about of the sokcs such as prices. And delete also if we decide to not keep any kind of product.
 
 **Add Search**
 - 10:30 AM: Enhanced the user experience by implementing search functionality, enabling users to find specific socks based on criteria such as name or price. Search functionality improves the catalog's usability.
@@ -64,10 +72,10 @@ This project is Assignment 1, which involves creating a robust MVC web applicati
        Swapping to Development environment will display more detailed information about the error
        that occurred.
        The Development environment shouldn't be enabled for deployed applications. It can result
-in displaying sensitive information from
-exceptions to end users. For local debugging, enable the Development environment by
-setting the ASPNETCORE_ENVIRONMENT environment
-variable to Development and restarting the app.
+       in displaying sensitive information from
+       exceptions to end users. For local debugging, enable the Development environment by
+       setting the ASPNETCORE_ENVIRONMENT environment
+       variable to Development and restarting the app.
 
 Resolved Errors (In Between Development)
 
