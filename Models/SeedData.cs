@@ -29,7 +29,7 @@ namespace AryaSock.Models
                         Size = "Medium",
                         Color = "White",
                         Price = 5M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.Four
                     },
 
                     new Sock
@@ -40,7 +40,7 @@ namespace AryaSock.Models
                         Size = "Large",
                         Color = "Gray",
                         Price = 8.99M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.Five
                     },
 
                     new Sock
@@ -62,7 +62,7 @@ namespace AryaSock.Models
                         Size = "Medium",
                         Color = "Blue",
                         Price = 7.99M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.Five
                     },
 
                     new Sock
@@ -73,7 +73,7 @@ namespace AryaSock.Models
                         Size = "Medium",
                         Color = "Red",
                         Price = 9.99M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.Two
                     },
 
                     new Sock
@@ -84,7 +84,7 @@ namespace AryaSock.Models
                         Size = "Large",
                         Color = "Green",
                         Price = 6.49M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.One
                     },
 
                     new Sock
@@ -95,7 +95,7 @@ namespace AryaSock.Models
                         Size = "Medium",
                         Color = "Brown",
                         Price = 8.49M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.Four
                     },
 
                     new Sock
@@ -106,7 +106,7 @@ namespace AryaSock.Models
                         Size = "Small",
                         Color = "Purple",
                         Price = 10.99M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.Five
                     },
 
                     new Sock
@@ -117,7 +117,7 @@ namespace AryaSock.Models
                         Size = "Medium",
                         Color = "Yellow",
                         Price = 6.99M,
-                        Rating = CustomRatingScale.Three
+                        Rating = CustomRatingScale.Four
                     },
 
                     new Sock
@@ -128,7 +128,7 @@ namespace AryaSock.Models
                         Size = "Large",
                         Color = "Black",
                         Price = 8.99M,
-                        Rating = CustomRatingScale.Two
+                        Rating = CustomRatingScale.Three
                     }
                 );
 
